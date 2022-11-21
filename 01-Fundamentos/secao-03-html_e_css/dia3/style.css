@@ -19,7 +19,7 @@
 
 /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
 .border {
-    display: ;
+    display: inline-block;
     width: 500px;
     height: 500px;
 }
