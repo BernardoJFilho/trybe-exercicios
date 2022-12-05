@@ -1,0 +1,41 @@
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   // console.log(index);
+//   impar = numbers[index] % 2;
+//   if (impar === 1) {
+//     console.log(impar);
+//   }
+// }
+
+// console.log();
+
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let impar = 0;
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//   if (numbers[index] % 2 !== 0) {
+//     impar += 1;
+//   } else {
+//     console.log("nenhum valor ímpar encontrado");
+//   }
+// }
+
+// console.log(impar);
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menor;
+
+for (value of numbers) {
+  if (menor > numbers[value]) {
+    menor = numbers[value];
+  }
+}
+console.log(menor);
+
+// const arr = [["index", "number"]];
+
+// for (index in numbers) {
+//   arr.push([index, numbers[index]]);
+// }
+// console.table(arr);

@@ -9,6 +9,7 @@ let soma = 0;
 let media = 0;
 let maior = 0;
 let divisor = numbers.length;
+let impar = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
   soma += numbers[index];
