@@ -1,6 +1,42 @@
+let inss;
+let ir;
+let salario = 3000;
 
+if (salario <= 1556.94) {
+  inss = 0.08;
+  ir = 1;
+  console.log(salario - salario * inss * ir);
+} else if (salario <= 2594.92 && salario <= 2826.65) {
+  inss = 0.09;
+  ir = 0.075;
+  console.log(salario - (salario * inss + salario * ir));
+} else if (salario <= 5189.82 && salario <= 2826.65) {
+  inss = 0.11;
+  ir = 0.075;
+  console.log(salario - (salario * inss + salario * ir));
+} else if (salario <= 5189.82 && salario <= 3751.05) {
+  inss = 0.11;
+  ir = 0.15;
+  console.log(salario - (salario * inss + salario * ir));
+} else if (salario <= 5189.82 && salario <= 4664.68) {
+  inss = 0.11;
+  ir = 0.225;
+  console.log(salario - (salario * inss + salario * ir));
+} else if (salario >= 5189.82 && salario >= 4664.68) {
+  inss = 570.88;
+  ir = 0.275;
+  console.log(salario - (inss + salario * ir));
+}
 
+// const custo = 20;
+// const venda = 70;
+// let lucro = venda - (custo + custo * 0.2);
 
+// if (custo > 0 && venda > 0) {
+//   console.log("seu lucro é de = R$" + lucro * 1000);
+// } else {
+//   console.log("error digite um valor valido");
+// }
 
 // let peca = "bispo";
 
