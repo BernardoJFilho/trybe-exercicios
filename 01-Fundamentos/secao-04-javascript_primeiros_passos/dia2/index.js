@@ -17,9 +17,8 @@ for (let index = 0; index < numbers.length; index += 1) {
   if (numbers[index] > maior) {
     maior = numbers[index];
   }
+  console.log(maior);
 }
-
-console.log(maior);
 
 if (media > 20) {
   console.log("valor maior que 20");

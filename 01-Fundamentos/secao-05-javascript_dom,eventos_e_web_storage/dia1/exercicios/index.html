@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Exercício</title>
+
+        <style>
+      main,
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Desafio - JavaEscripito</h1>
+        </header>
+
+        <main class="main-content">
+            <section class="center-content">
+                <p>Texto padrão do nosso site</p>
+                <p id="sla">-----</p>
+                <p>Trybe</p>
+            </section>
+        </main>
+
+    </body>
+    <script>
+        function mudarTexto(param1, param2) {
+          document.getElementById(param1).innerHTML = param2;
+        }
+        mudarTexto("sla", "Bem de vida");
+  
+        function mudarCor(param1, param2) {
+          document.getElementsByClassName(param1)[0].style.backgroundColor =
+            param2;
+        }
+        mudarCor("main-content", "rgb(76,164,109)");
+        mudarCor("center-content", "white");
+  
+        function corrigirTexto(param1, param2) {
+          document.getElementsByClassName(param1)[0].innerHTML = param2;
+        }
+        corrigirTexto("title", "Desafio - JavaScript");
+  
+        function modifiqueTexto(param1, param2) {
+          document.getElementsByTagName(param1)[0].innerHTML = param2;
+        }
+        modifiqueTexto("p", "TEXTO PADRÂO DO NOSSO SITE");
+  
+        function exibirTag(params) {
+          return document.getElementsByTagName(params);
+        }
+        console.log(exibirTag('p'));
+      </script>
+</html>
